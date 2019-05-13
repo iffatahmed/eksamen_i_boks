@@ -9,3 +9,15 @@ $(document).ready(function() {
       }
     });
 });
+
+// Icons list 
+ $('.step-icons').on('click', 'li', function() {
+    $('.step-icons li.active').removeClass('active');
+    $(this).addClass('active');
+});
+
+ $('.select-list').on('click', 'li', function() {
+    $('.select-list li.active').removeClass('active');
+    $(this).addClass('active');
+});
+ 
