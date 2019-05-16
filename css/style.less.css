@@ -124,7 +124,7 @@ navbar-nav li a {
   background-size: 100% auto;
   padding-bottom: 50px;
 }
-.home-bg .navigation-head {
+.home .navigation-head {
   height: 70px;
   border-bottom: 1px solid #cccccc91;
 }
@@ -189,6 +189,9 @@ navbar-nav li a {
   padding: 6px 10px;
   margin-right: 7px;
 }
+.b4-colum {
+  padding: 0 78px;
+}
 .b4-colum p {
   color: #fff;
   font-size: 12px;
@@ -197,9 +200,6 @@ navbar-nav li a {
 .b4-colum img {
   margin-bottom: 20px;
   height: 40px;
-}
-.b4-colum {
-  padding: 0 78px;
 }
 .banner-col4 .col-md-4:nth-child(2) {
   border-left: 1px solid #ccc;
@@ -259,6 +259,12 @@ navbar-nav li a {
   padding: 0;
   margin-top: 5px;
 }
+.content-list-01 li {
+  font-size: 11px;
+  color: #000;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
 .content-list-01 li i {
   font-size: 8px;
   color: #d6bf18;
@@ -266,22 +272,16 @@ navbar-nav li a {
   position: relative;
   top: -1px;
 }
-.content-list-01 li {
-  font-size: 11px;
-  color: #000;
-  margin-bottom: 5px;
-  font-weight: 500;
-}
-.content-list-01 li:nth-child(4) i {
-  color: #ccc;
-}
-.content-list-01 li:nth-child(4) {
-  color: #ccc;
-}
 .content-list-01 li:last-child {
   color: #ccc;
 }
 .content-list-01 li:last-child i {
+  color: #ccc;
+}
+.content-list-01 li:last-child(4) {
+  color: #ccc;
+}
+.content-list-01 li:last-child(4) i {
   color: #ccc;
 }
 .bottomBox-sec01 {
@@ -369,6 +369,16 @@ navbar-nav li a {
   padding-top: 80px;
   padding-bottom: 200px;
 }
+.mid-section-02:after {
+  position: absolute;
+  content: '';
+  background: url(../images/star_rising2.png);
+  width: 200px;
+  height: 100px;
+  background-repeat: no-repeat;
+  margin-top: 8px;
+  right: 11%;
+}
 .section-02-content h3 {
   font-size: 21px;
   color: #012E75;
@@ -377,6 +387,15 @@ navbar-nav li a {
 /* Carousel */
 .space-top-testimonial {
   margin-top: 80px;
+}
+.space-top-testimonial .col-sm-4 {
+  padding: 0;
+}
+.space-top-testimonial .active {
+  transform: scale(1.2);
+  z-index: 99;
+  position: relative;
+  box-shadow: 1px 1px 20px #000000cf;
 }
 .testimonial-s1 img {
   height: 400px;
@@ -420,15 +439,6 @@ navbar-nav li a {
   font-size: 12px;
   margin-top: 13px;
 }
-.space-top-testimonial .col-sm-4 {
-  padding: 0;
-}
-.space-top-testimonial .active {
-  transform: scale(1.2);
-  z-index: 99;
-  position: relative;
-  box-shadow: 1px 1px 20px #000000cf;
-}
 .stars-img:before {
   position: absolute;
   content: '';
@@ -438,16 +448,6 @@ navbar-nav li a {
   background-repeat: no-repeat;
   left: 20%;
   margin-top: -38px;
-}
-.mid-section-02:after {
-  position: absolute;
-  content: '';
-  background: url(../images/star_rising2.png);
-  width: 200px;
-  height: 100px;
-  background-repeat: no-repeat;
-  margin-top: 8px;
-  right: 11%;
 }
 /********* Section 03 Home ***********/
 .mid-section-03 {
@@ -472,6 +472,24 @@ navbar-nav li a {
   left: 10%;
   margin-top: 92px;
 }
+.section-let-box-03 {
+  margin: 0 25px;
+  background: rgba(255, 255, 255, 0.84);
+  padding: 82px 34px;
+  border-radius: 16px;
+  box-shadow: 1px 1px 20px #00000078;
+}
+.section-let-box-03 h3 {
+  font-size: 20px;
+  color: #012E75;
+}
+.section-let-box-03 p {
+  font-size: 14px;
+  color: #000;
+  line-height: 25px;
+  margin-bottom: 0;
+  padding-top: 14px;
+}
 .section-let-box-03:before {
   position: absolute;
   content: '';
@@ -482,32 +500,12 @@ navbar-nav li a {
   top: -95px;
   background-repeat: no-repeat;
 }
-.section-let-box-03 h3 {
-  font-size: 20px;
-  color: #012E75;
-}
-.section-let-box-03 {
-  margin: 0 25px;
-  background: rgba(255, 255, 255, 0.84);
-  padding: 82px 34px;
-  border-radius: 16px;
-  box-shadow: 1px 1px 20px #00000078;
-}
-.section-let-box-03 p {
-  font-size: 14px;
-  color: #000;
-  line-height: 25px;
-  margin-bottom: 0;
-  padding-top: 14px;
-}
 .section-right-box-03 {
   margin: 0px 30px;
 }
 .section-right-box-03 p {
   color: #fff;
   font-size: 16px;
-}
-.section-right-box-03 p {
   margin-bottom: 5px;
   line-height: 30px;
 }
@@ -537,6 +535,10 @@ navbar-nav li a {
   width: 5%;
   margin: 29px -20px;
 }
+.card {
+  border: none;
+  background: none !important;
+}
 .card-header {
   border: 1px solid #dd9f14;
   border-radius: 40px !important;
@@ -544,19 +546,15 @@ navbar-nav li a {
   background: transparent;
   text-align: center;
 }
-.card-header a {
+.card-header .mb-0[aria-expanded=true] {
+  color: #fff;
+  background: #012E75 !important;
+}
+.card a {
   font-size: 16px;
   color: #333 !important;
   font-weight: 100;
   text-decoration: none;
-}
-.card {
-  border: none;
-  background: none !important;
-}
-.card-header .mb-0[aria-expanded=true] {
-  color: #fff;
-  background: #012E75 !important;
 }
 /********* Title Bar ***********/
 .section01-bg {
@@ -577,6 +575,14 @@ navbar-nav li a {
   font-weight: 500;
 }
 /******* Section 2 boxes  *******/
+/******** and Progress Bar **********/
+.box-title {
+  text-align: center;
+  font-size: 16px;
+  color: #2c5b93;
+  margin-bottom: 44px;
+  text-transform: uppercase;
+}
 .box-detail {
   background: #E2EFBF;
   border-radius: 10px;
@@ -603,13 +609,6 @@ navbar-nav li a {
   color: #fff;
   padding: 5px 0;
 }
-.box-btn {
-  box-shadow: 2px 2px 5px #0000005c;
-}
-.box-btn:hover {
-  background: #fff !important;
-  cursor: pointer;
-}
 .box-detail-body .btn {
   font-size: 10px;
   border-radius: 20px;
@@ -624,9 +623,71 @@ navbar-nav li a {
   text-align: center;
   border-radius: 0px 0px 11px 11px;
 }
+.box-detail.progress-bar {
+  background-color: #60C5AD;
+  height: 19px;
+  width: 100%;
+  display: block;
+  text-align: left;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 1px;
+  -moz-box-shadow: 0 1px 5px #AAE0D7 inset, 0 1px 0 #D6D6D6;
+  -webkit-box-shadow: 0 1px 5px #AAE0D7 inset, 0 1px 0 #D6D6D6;
+  box-shadow: 0 1px 5px #AAE0D7 inset, 0 1px 0 #D6D6D6;
+  box-shadow: inset 0 0 12px #397362;
+}
+.box-detail.progress-bar span {
+  display: inline-block;
+  height: 100%;
+  background-color: #5bbba4;
+  -webkit-transition: width 0.4s ease-in-out;
+  -moz-transition: width 0.4s ease-in-out;
+  -ms-transition: width 0.4s ease-in-out;
+  -o-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+.box-detail .stripes span {
+  -webkit-background-size: 30px 30px;
+  -moz-background-size: 30px 30px;
+  background-size: 30px 30px;
+  background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0.25, rgba(230, 244, 138, 0.77)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(230, 244, 138, 0.77)), color-stop(0.75, rgba(230, 244, 138, 0.77)), color-stop(0.75, transparent), to(transparent));
+  background-image: -webkit-linear-gradient(135deg, rgba(230, 244, 138, 0.77) 25%, transparent 25%, transparent 50%, rgba(230, 244, 138, 0.77) 50%, rgba(230, 244, 138, 0.77) 75%, transparent 75%, transparent);
+  background-image: -moz-linear-gradient(135deg, rgba(230, 244, 138, 0.77) 25%, transparent 25%, transparent 50%, rgba(230, 244, 138, 0.77) 50%, rgba(230, 244, 138, 0.77) 75%, transparent 75%, transparent);
+  background-image: -ms-linear-gradient(135deg, rgba(230, 244, 138, 0.77) 25%, transparent 25%, transparent 50%, rgba(230, 244, 138, 0.77) 50%, rgba(230, 244, 138, 0.77) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(135deg, rgba(230, 244, 138, 0.77) 25%, transparent 25%, transparent 50%, rgba(230, 244, 138, 0.77) 50%, rgba(230, 244, 138, 0.77) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(135deg, rgba(230, 244, 138, 0.77) 25%, transparent 25%, transparent 50%, rgba(230, 244, 138, 0.77) 50%, rgba(230, 244, 138, 0.77) 75%, transparent 75%, transparent);
+}
+.box-detail .stripes font {
+  position: relative;
+  top: -4px;
+  color: #fff;
+  font-size: 13px;
+  text-align: center;
+  left: 20%;
+}
+.light-progress-bar {
+  background: #2f93c3 !important;
+}
+.light-progress-bar span {
+  background-color: #308fb8 !important;
+  background-image: linear-gradient(135deg, #33daea 25%, transparent 25%, transparent 50%, #33d8e9 50%, #33d6e7 75%, transparent 75%, transparent) !important;
+}
+.dark-progress-bar {
+  background: #9395fa !important;
+}
+.dark-progress-bar span {
+  background-color: #8891e8 !important;
+  background-image: linear-gradient(135deg, #80b9fc 25%, transparent 25%, transparent 50%, #82b5fc 50%, #82b7fc 75%, transparent 75%, transparent) !important;
+}
 .btn-box {
   position: relative;
   top: 15px;
+  box-shadow: 2px 2px 5px #0000005c;
+}
+.btn-box:hover {
+  background: #fff !important;
+  cursor: pointer;
 }
 .btn-box .btn {
   border-radius: 20px;
@@ -679,94 +740,29 @@ navbar-nav li a {
 .header-light-bg {
   background-image: linear-gradient(#8ff1f3, #8ecde0);
 }
-.body-light-bg {
-  background-image: linear-gradient(#33deec, #2f86bc);
-}
-.bg-light-footer {
-  background-image: linear-gradient(#8dc9dd, #8cb3d1);
-}
 .header-dark-bg {
   background-image: linear-gradient(#b6d6f7, #b2ddf7);
-}
-.body-dark-bg {
-  background-image: linear-gradient(#7dbffc, #909dfc);
-}
-.footer-dark-bg {
-  background-image: linear-gradient(#c6bbf6, #bfc7f7);
 }
 .header-silver-bg {
   background-image: linear-gradient(#d9d9d9, #d9d9d9);
 }
+.body-light-bg {
+  background-image: linear-gradient(#33deec, #2f86bc);
+}
+.body-dark-bg {
+  background-image: linear-gradient(#7dbffc, #909dfc);
+}
 .body-silver-bg {
   background-image: linear-gradient(#c6c6c6, #acacac);
+}
+.footer-dark-bg {
+  background-image: linear-gradient(#c6bbf6, #bfc7f7);
 }
 .footer-silver-bg {
   background-image: linear-gradient(#d9d9d9, #d7d7d7);
 }
-.box-title {
-  text-align: center;
-  font-size: 16px;
-  color: #2c5b93;
-  margin-bottom: 44px;
-  text-transform: uppercase;
-}
-/******** Progress Bar **********/
-.box-detail .progress-bar {
-  background-color: #60C5AD;
-  height: 19px;
-  width: 100%;
-  display: block;
-  text-align: left;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 1px;
-  -moz-box-shadow: 0 1px 5px #AAE0D7 inset, 0 1px 0 #D6D6D6;
-  -webkit-box-shadow: 0 1px 5px #AAE0D7 inset, 0 1px 0 #D6D6D6;
-  box-shadow: 0 1px 5px #AAE0D7 inset, 0 1px 0 #D6D6D6;
-  box-shadow: inset 0 0 12px #397362;
-}
-.box-detail .progress-bar span {
-  display: inline-block;
-  height: 100%;
-  background-color: #5bbba4;
-  -webkit-transition: width 0.4s ease-in-out;
-  -moz-transition: width 0.4s ease-in-out;
-  -ms-transition: width 0.4s ease-in-out;
-  -o-transition: width 0.4s ease-in-out;
-  transition: width 0.4s ease-in-out;
-}
-.box-detail .stripes span {
-  -webkit-background-size: 30px 30px;
-  -moz-background-size: 30px 30px;
-  background-size: 30px 30px;
-  background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0.25, rgba(230, 244, 138, 0.77)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(230, 244, 138, 0.77)), color-stop(0.75, rgba(230, 244, 138, 0.77)), color-stop(0.75, transparent), to(transparent));
-  background-image: -webkit-linear-gradient(135deg, rgba(230, 244, 138, 0.77) 25%, transparent 25%, transparent 50%, rgba(230, 244, 138, 0.77) 50%, rgba(230, 244, 138, 0.77) 75%, transparent 75%, transparent);
-  background-image: -moz-linear-gradient(135deg, rgba(230, 244, 138, 0.77) 25%, transparent 25%, transparent 50%, rgba(230, 244, 138, 0.77) 50%, rgba(230, 244, 138, 0.77) 75%, transparent 75%, transparent);
-  background-image: -ms-linear-gradient(135deg, rgba(230, 244, 138, 0.77) 25%, transparent 25%, transparent 50%, rgba(230, 244, 138, 0.77) 50%, rgba(230, 244, 138, 0.77) 75%, transparent 75%, transparent);
-  background-image: -o-linear-gradient(135deg, rgba(230, 244, 138, 0.77) 25%, transparent 25%, transparent 50%, rgba(230, 244, 138, 0.77) 50%, rgba(230, 244, 138, 0.77) 75%, transparent 75%, transparent);
-  background-image: linear-gradient(135deg, rgba(230, 244, 138, 0.77) 25%, transparent 25%, transparent 50%, rgba(230, 244, 138, 0.77) 50%, rgba(230, 244, 138, 0.77) 75%, transparent 75%, transparent);
-}
-.box-detail .stripes font {
-  position: relative;
-  top: -4px;
-  color: #fff;
-  font-size: 13px;
-  text-align: center;
-  left: 20%;
-}
-.light-progress-bar {
-  background: #2f93c3 !important;
-}
-.light-progress-bar span {
-  background-color: #308fb8 !important;
-  background-image: linear-gradient(135deg, #33daea 25%, transparent 25%, transparent 50%, #33d8e9 50%, #33d6e7 75%, transparent 75%, transparent) !important;
-}
-.dark-progress-bar {
-  background: #9395fa !important;
-}
-.dark-progress-bar span {
-  background-color: #8891e8 !important;
-  background-image: linear-gradient(135deg, #80b9fc 25%, transparent 25%, transparent 50%, #82b5fc 50%, #82b7fc 75%, transparent 75%, transparent) !important;
+.bg-light-footer {
+  background-image: linear-gradient(#8dc9dd, #8cb3d1);
 }
 .play-icon {
   font-size: 10px !important;
@@ -785,7 +781,7 @@ navbar-nav li a {
   padding-top: 70px;
   padding-bottom: 40px;
 }
-.box-title-border:after {
+.boxes-title-border:after {
   position: absolute;
   content: '';
   background: #e1d36d;

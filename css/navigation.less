@@ -1,0 +1,143 @@
+/******* Header *******/
+.nav{
+    
+  &-bg{
+    background: url(../images/bg_header.png);
+    background-size: 100% auto;
+    background-position: bottom;    
+    background-repeat: no-repeat;
+  } 
+  &bar{
+ 
+    &-brand{
+      background:#011c46;
+      position: relative;
+      margin-top: 87px;
+    }
+    & img{
+      height: 100px;
+    }   
+  }
+  &igation{
+      &-head{
+        height: 70px;
+        border-bottom: 1px solid #cccccc91;  
+      }
+      &-menu-{
+          &top{
+            position: relative;
+            left: 10%;
+              & li{
+                  margin-left: 32px;
+                  & a{
+                    color: #fff !important;
+                  }
+              }
+          }
+          &bottom{
+            position: relative;
+            right: 15%;
+              
+            & li{
+              margin-left: 32px;
+                
+              & a{
+                color: #fff !important;
+                  
+              }
+              &:nth-child(2){
+                margin-top: 5px;
+              }
+            }
+          } 
+      }
+    }
+
+    &-white-bg{
+        background: #fff;
+        position: fixed !important;
+        width: 100%;
+        box-shadow: 0px 4px 19px #ccc;
+        z-index: 999;
+        transition: color 1s ease 0s;
+        height: 90px !important;
+
+        & .navbar-nav li a{
+           color: #012e75 !important;
+           font-weight: 500; 
+              
+        }
+        & .default-logo{
+           display: none;
+        }
+        & .navbar-brand{
+            background: transparent;
+            margin-top: 0 !important;
+        }
+        & .stiky-logo{
+            display: block !important; 
+            height: 60px;
+        }
+    }
+}
+
+navbar-nav li a{
+  text-transform: uppercase;
+  font-size: 13px;
+} 
+
+/********* Fix Navbar ***********/
+
+.stiky-logo{
+    display: none;
+}
+
+
+
+.align-font{
+    padding: 94px 0;
+    color: #fff; 
+    &  h3{
+        font-size: 23px;
+        text-transform: uppercase;
+        font-weight: 400;   
+    }
+    & p {
+        font-size: 11px;
+        & .fa-clock-o{
+            font-size: 21px;
+            position: relative;
+            top: 3px;
+        }
+        & .btn{
+            background: transparent;
+            border: 1px solid #fff;
+            font-size: 9px;
+            border-radius: 24px;
+            margin-left: 18px;
+            text-transform: uppercase;
+            padding-right: 35px;  
+            padding-left: 34px;
+        }
+        & span{
+            font-size: 14px;
+            position: absolute;
+            margin-top: 0px;
+            margin-left: -24px;  
+        }
+        
+    }
+}
+
+.logout-icon{
+    max-height: 15px;
+    margin-right: 4px;  
+}
+.user-image img{
+    max-height: 40px;
+    margin-right: 20px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+}
+
+

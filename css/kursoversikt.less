@@ -1,0 +1,265 @@
+
+/********* Title Bar ***********/
+
+.section01-bg{
+    background: url(../images/bg_content_area.png);
+    width: 100%;
+    background-size: 100% auto;
+    padding-bottom: 80px;
+}
+.title-bar {
+    padding: 43px 0;
+    & p{
+        font-size: 16px;
+        margin-bottom: 28px;
+        margin-top: 10px;
+        color: #012e75;
+        text-transform: uppercase;
+        font-weight: 500;  
+    }
+}
+
+
+
+/******* Section 2 boxes  *******/
+
+/******** and Progress Bar **********/
+.box{
+    &-title{
+        text-align: center;
+        font-size: 16px;
+        color: #2c5b93;
+        margin-bottom: 44px;
+        text-transform: uppercase;
+    }
+    &-detail{ 
+        background: #E2EFBF;
+        border-radius: 10px;
+        box-shadow: 1px 1px 15px #00000057;
+        margin:41px 19px;
+        &-header{
+            background-image: linear-gradient(#E4F1C0, #C9E6C6);
+            text-align: center;
+            padding:15px 0;
+            color: #011c46;
+            border-radius: 11px 11px 0px 0px;
+            & h5{
+                margin: 0;
+                font-size: 15px;
+            }
+        }
+        &-body{
+            padding: 30px 20px;
+            background-image: linear-gradient(#A1DC9C, #7BCFA6,#4EBFB1);
+            & .clock{
+            font-size: 13px;
+            color: #fff;
+            padding: 5px 0;
+            }
+            & .btn{
+                font-size: 10px;
+                border-radius: 20px;
+                background: #fff;
+                color:#48BDB3 !important;
+                border:0;
+                padding:5px 15px;
+            }
+        }
+        &-footer{
+            padding-top: 10px;
+            background-image: linear-gradient(#BDE2C9, #B4DFCB);
+            text-align: center;
+            border-radius: 0px 0px 11px 11px;
+        }
+        &.progress-bar {
+             background-color: #60C5AD;
+             height: 19px;
+             width: 100%;
+             display: block;    
+             text-align: left;
+             -moz-border-radius: 5px;
+             -webkit-border-radius: 5px;
+             border-radius: 1px;
+             -moz-box-shadow: 0 1px 5px #AAE0D7 inset, 0 1px 0 #D6D6D6;
+             -webkit-box-shadow: 0 1px 5px #AAE0D7 inset, 0 1px 0 #D6D6D6;
+             box-shadow: 0 1px 5px #AAE0D7 inset, 0 1px 0 #D6D6D6;           
+             box-shadow: inset 0 0 12px #397362;
+
+            & span {
+                 display: inline-block;
+                 height: 100%;
+                  background-color: #5bbba4;
+                  -webkit-transition: width .4s ease-in-out;
+                  -moz-transition: width .4s ease-in-out;
+                  -ms-transition: width .4s ease-in-out;
+                  -o-transition: width .4s ease-in-out;
+                  transition: width .4s ease-in-out;    
+            }
+
+        }
+        & .stripes{
+            & span {
+                  -webkit-background-size: 30px 30px;
+                  -moz-background-size: 30px 30px;
+                  background-size: 30px 30px;     
+                  background-image: -webkit-gradient(linear, left top, right bottom,
+                  color-stop(.25, rgba(230, 244, 138, 0.77)), color-stop(.25, transparent),
+                  color-stop(.5, transparent), color-stop(.5, rgba(230, 244, 138, 0.77)),
+                  color-stop(.75, rgba(230, 244, 138, 0.77)), color-stop(.75, transparent),
+                  to(transparent));
+                  background-image: -webkit-linear-gradient(135deg, rgba(230, 244, 138, 0.77) 25%, transparent 25%,
+                                      transparent 50%, rgba(230, 244, 138, 0.77) 50%, rgba(230, 244, 138, 0.77) 75%,
+                                      transparent 75%, transparent);
+                  background-image: -moz-linear-gradient(135deg, rgba(230, 244, 138, 0.77) 25%, transparent 25%,
+                                      transparent 50%, rgba(230, 244, 138, 0.77) 50%, rgba(230, 244, 138, 0.77) 75%,
+                                      transparent 75%, transparent);
+                  background-image: -ms-linear-gradient(135deg, rgba(230, 244, 138, 0.77) 25%, transparent 25%,
+                                      transparent 50%, rgba(230, 244, 138, 0.77) 50%, rgba(230, 244, 138, 0.77) 75%,
+                                      transparent 75%, transparent);
+                  background-image: -o-linear-gradient(135deg, rgba(230, 244, 138, 0.77) 25%, transparent 25%,
+                                      transparent 50%, rgba(230, 244, 138, 0.77) 50%, rgba(230, 244, 138, 0.77) 75%,
+                                      transparent 75%, transparent);
+                  background-image: linear-gradient(135deg, rgba(230, 244, 138, 0.77) 25%, transparent 25%,
+                                      transparent 50%, rgba(230, 244, 138, 0.77) 50%, rgba(230, 244, 138, 0.77) 75%,
+                                      transparent 75%, transparent);            
+            }
+
+            & font{
+                position: relative;
+                top: -4px;
+                color: #fff;
+                font-size: 13px;
+                text-align: center;
+                left: 20%;
+            }
+        }
+    }
+}
+
+.light-progress-bar{
+    background: #2f93c3 !important;
+    & span{
+         background-color: #308fb8 !important; 
+         background-image: linear-gradient(135deg, rgb(51, 218, 234) 25%, transparent 25%, transparent 50%, rgb(51, 216, 233) 50%, rgb(51, 214, 231) 75%, transparent 75%, transparent) !important;     
+    }
+}
+
+
+.dark-progress-bar{
+    background: #9395fa !important;
+    & span{
+         background-color:#8891e8 !important; 
+         background-image: linear-gradient(135deg, rgb(128, 185, 252) 25%, transparent 25%, transparent 50%, rgb(130, 181, 252) 50%, rgb(130, 183, 252) 75%, transparent 75%, transparent) !important;     
+    }
+}
+
+
+.btn-box{
+    position: relative;
+    top: 15px;
+    box-shadow: 2px 2px 5px #0000005c;
+    &:hover{
+      background: #fff !important;
+      cursor: pointer;
+    }
+    & .btn{
+        border-radius: 20px;
+        padding: 5px 20px;
+        font-size: 13px;
+    }
+    & .btn-outline-primary{
+        background: #2C5B93;
+        color: #fff;
+    }
+    & .btn-outline-warning{
+        background: #D6BF18;
+        color: #fff;
+    }
+}
+
+
+.bg-image-shadow{
+    background: url(../images/bg_shadow.png);
+    margin-bottom: 43px;
+    background-size: 100% 100%;
+}
+.clock span {
+    font-size: 24px;
+    float: left;
+    margin-right: 6px;
+    margin-top: -3px;
+}
+
+/******* section02 *******/
+
+.section02-bg{
+    width: 100%;
+    background-size: 100% auto;
+    padding-bottom: 70px;
+}
+.overlay-bg{
+    background: linear-gradient(#f1efef,#f7f7f7),url(../images/bg_content_area.png);  
+}
+.btn-light{
+    background: #d6bf18 !important;
+    border-color: #d6bf18 !important;
+    color: #fff !important;
+    font-size: 11px !important;
+    margin-left: 4px;
+    text-transform: uppercase;
+}
+.blue-dark-btn{
+    background: #2c5b93 !important;
+    border-color: #2c5b93 !important;
+    color: #fff !important;
+    font-size: 11px !important;  
+    text-transform: uppercase;
+}
+
+.header{
+    &-light-bg{
+        background-image: linear-gradient(#8ff1f3, #8ecde0); 
+    }
+    &-dark-bg{
+        background-image: linear-gradient(#b6d6f7, #b2ddf7);   
+    }
+    &-silver-bg{
+        background-image: linear-gradient(#d9d9d9, #d9d9d9);   
+    }
+}
+.body{
+    &-light-bg{
+        background-image: linear-gradient(#33deec, #2f86bc);  
+    }
+    &-dark-bg{
+        background-image: linear-gradient(#7dbffc, #909dfc);    
+    }
+    &-silver-bg{
+        background-image: linear-gradient(#c6c6c6, #acacac);    
+    }
+}
+.footer{
+    &-dark-bg{
+        background-image: linear-gradient(#c6bbf6, #bfc7f7);     
+    }
+    &-silver-bg{
+        background-image: linear-gradient(#d9d9d9, #d7d7d7);     
+    }
+}
+
+.bg-light-footer{
+    background-image: linear-gradient(#8dc9dd, #8cb3d1);  
+}
+
+
+
+
+.play-icon{
+    font-size: 10px !important;
+    margin: 0px 4px;
+    position: relative;
+    top: -1px;
+}
+.boxes-space .box-detail{
+    margin: 68px 24px !important;  
+}
