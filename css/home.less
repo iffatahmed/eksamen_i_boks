@@ -1,4 +1,4 @@
-
+@import "variables.less";
 /********* Home Page ***********/
 
 .home{
@@ -9,7 +9,7 @@
     }
     & .navigation-head{
         height: 70px;
-        border-bottom: 1px solid #cccccc91;  
+        border-bottom: 1px solid @my-grey;  
     } 
 }
 
@@ -23,22 +23,22 @@
         & li{
             font-size: 18px;
             display: inline-block;
-            color: #fff;
+            color: @my-white;
             text-transform: uppercase;
             margin:4px 4px;
             &:nth-child(1) {
                 height: 25px;
-                border-right: 2px solid #cccccc8c;
+                border-right: 2px solid @my-grey;
                 padding-right: 11px;
             }
             &:nth-child(2) {
                 height: 25px;
-                border-right:2px solid #cccccc8c;
+                border-right:2px solid @my-grey;
                 padding-right: 11px;
             }
             &:nth-child(4) {
                 height: 25px;
-                border-right:2px solid #cccccc8c;
+                border-right:2px solid @my-grey;
                 padding-right: 11px;
             }
         }
@@ -48,7 +48,7 @@
 
 .banner-title{
     text-align: center;
-    color: #d6bf18;
+    color: @my-yellow;
     text-transform: uppercase;
     font-size: 14px;
     margin: 10px 0;
@@ -58,16 +58,16 @@
 .banner-register-title{
     margin:65px 15px; 
     & p{
-        color: #fff;
+        color: @color-white;
         text-transform: uppercase;
-        border-bottom: 1px solid #d6bf18;
+        border-bottom: 1px solid @my-yellow;
         font-size: 17px;
         padding-bottom: 8px;
     }
     & .btn-link{
         padding: 0;
-        background: #d6bf18;
-        color: #fff;
+        background: @my-yellow;
+        color: @color-white;
         border-radius: 0px;
         line-height: 0px;
         text-transform: uppercase;
@@ -75,7 +75,7 @@
         padding-right: 17px;
     }
     & .btn-link i{
-        border-right: 1px solid #fff;
+        border-right: 1px solid @color-white;
         padding: 6px 10px;  
         margin-right: 7px;
     }
@@ -86,7 +86,7 @@
     padding:0 78px;
     
     & p{
-        color: #fff;
+        color: @color-white;
         font-size: 12px;
         text-transform: uppercase;
     }
@@ -98,8 +98,8 @@
 
 
 .banner-col4 .col-md-4:nth-child(2) {
-    border-left: 1px solid #ccc;
-    border-right: 1px solid #ccc;
+    border-left: 1px solid @my-grey;
+    border-right: 1px solid @my-grey;
 }
 
 /********* Section 01 Home ***********/
@@ -107,7 +107,7 @@
 .mid-section-01{
     background: url(../images/bg_content_area.png);
     height: auto;
-    box-shadow: inset 6px -25px 27px #bdbdbd;
+    box-shadow: inset 6px -25px 27px @my-grey;
     padding: 100px 0px;
 }
 
@@ -117,21 +117,21 @@
         &-content{ 
             & h3{
                 font-size: 21px;
-                color: #012E75;
+                color: @my-blue;
                 margin-bottom: 30px;
             }
             & p{
                 font-size: 20px;
-                color: #333333;
+                color: @color-grey;
                 line-height: 32px;
                 margin-bottom: 29px;
             }
         }
         &-boxes{
-            background: #fff;
+            background: @color-white;
             padding: 21px 40px;
             border-radius: 15px;
-            box-shadow:1px 1px 19px #ccc;
+            box-shadow:1px 1px 19px @my-grey;
             height: 190px;
             margin: 0 10px;
         }
@@ -146,7 +146,7 @@
 .aret-01{
     font-size: 18px;
     text-align: center;
-    color: #012E75;
+    color: @my-blue;
     margin-bottom: 0px;
 }
 
@@ -163,7 +163,7 @@
             
             & i{
                 font-size: 10px;
-                color: #d6bf18;
+                color: @my-yellow;
             }
         }
     }
@@ -179,26 +179,26 @@
         
         & li{
             font-size: 11px;
-            color: #000;
+            color: @color-black;
             margin-bottom: 5px;
             font-weight: 500;
             
             & i{
                 font-size: 8px;
-                color: #d6bf18;
+                color: @my-yellow;
                 margin-right: 2px;
                 position: relative;
                 top: -1px;
             }
             &:last-child{
-                color: #ccc;
+                color: @my-grey;
                 & i{
-                    color: #ccc;
+                    color: @my-grey;
                 }
                 &(4){
-                    color: #ccc;
+                    color: @my-grey;
                     & i{
-                        color: #ccc;
+                        color: @my-grey;
                     }
                 }
             }
@@ -211,16 +211,16 @@
 
 .bottomBox{
     &-sec01{
-        border:1px solid #D6BF18;
+        border:1px solid @my-yellow;
         border-radius: 10px;
         margin: 20px 10px;
         & h3{
-            background: #D6BF18;
+            background: @my-yellow;
             font-size: 13px;
             text-transform: uppercase;
             text-align: center;
             padding: 9px 0;
-            color: #fff;
+            color: @color-white;
             border-radius: 8px 8px 0px 0px;
             margin:0;
         }
@@ -232,12 +232,12 @@
                 padding: 0;
                 
                 & li{
-                    color: #ccc;
+                    color: @my-grey;
                     font-size: 11px;
                     margin-bottom: 5px;
                     
                     & i{
-                        color: #ccc;
+                        color: @my-grey;
                         font-size: 7px;
                         position: relative;
                         top: -2px;
@@ -278,7 +278,7 @@
 .price-box{
     font-size: 13px;
     text-align: center;
-    background: #fff;
+    background: @color-white;
     width: 50px;
     height: 50px;
     border-radius: 27px;
@@ -287,14 +287,14 @@
     left: 10px;
     padding: 14px 13px;
     text-decoration: line-through;
-    color: #d6bf18;
+    color: @my-yellow;
 }
 .contentfb-btn .btn-link{
     font-weight: 600;
     margin-top: 30px;
-    border: 1px solid #D6BF18;
+    border: 1px solid @my-yellow;
     font-size: 14px;
-    color: #012e75;
+    color: @my-blue;
     border-radius: 7px;
     padding-right: 25px;
     padding-left: 27px;   
@@ -329,7 +329,7 @@
 }
 .section-02-content h3{
     font-size: 21px;
-    color: #012E75;
+    color: @my-blue;
     margin-bottom: 30px;
 }
 
@@ -344,7 +344,7 @@
         transform: scale(1.2);
         z-index: 99;
         position: relative;
-        box-shadow: 1px 1px 20px #000000cf;
+        box-shadow: 1px 1px 20px @color-black;
     }
 }
 
@@ -356,7 +356,7 @@
     }
     &1-caption {
         position: absolute;
-        background: #ffffffd9;
+        background: @color-white;
         padding: 39px 38px;
         padding-bottom: 12px !important;
         bottom: 29px;
@@ -366,7 +366,7 @@
         & h3{
             margin: 0;
             font-size: 15px;
-            color: #012661;
+            color: @my-blue;
             text-transform: uppercase;
         }
         & p{
@@ -387,7 +387,7 @@
 .star-lsit-testimonial{
     margin: 0;
     padding: 0;
-    border-top: 1px solid #d6bf18;
+    border-top: 1px solid @my-yellow;
     margin-top: 15px;
     
     & li{
@@ -395,7 +395,7 @@
         margin: 0 2px;
         
         & i{
-            color: #d6bf18;
+            color: @my-yellow;
             font-size: 12px;
             margin-top: 13px;
         }
@@ -420,7 +420,7 @@
 /********* Section 03 Home ***********/
 
 .mid-section-03{
-    background:#012e75;
+    background:@my-blue;
 }
 .topspace-section03{
     margin-top: 50px;  
@@ -450,15 +450,15 @@
         background: rgba(255, 255, 255, 0.84);
         padding: 82px 34px;
         border-radius: 16px;
-        box-shadow: 1px 1px 20px #00000078;
+        box-shadow: 1px 1px 20px @color-black;
         
         & h3{
             font-size: 20px;
-            color: #012E75;
+            color: @my-blue;
         }
         & p{
             font-size: 14px;
-            color: #000;
+            color: @color-black;
             line-height: 25px;
             margin-bottom: 0;
             padding-top: 14px;
@@ -477,7 +477,7 @@
     &-right-box-03{
         margin: 0px 30px;
         & p{
-            color: #fff;
+            color: @color-white;
             font-size: 16px;
             margin-bottom: 5px;
             line-height: 30px;
@@ -487,7 +487,7 @@
 
 
 .left-border-paragraph {
-    border-left: 1px solid #D6BF18;
+    border-left: 1px solid @my-yellow;
     padding-left: 13px;
     position: relative;
     left: -13px;
@@ -503,13 +503,13 @@
 .faq-title h3{
     font-size: 21px;
     text-align: center;
-    color: #012E75;
+    color: @my-blue;
     margin-bottom: 50px;
     
     &:before{
         position: absolute;
         content: '';
-        background: #D6BF18;
+        background: @my-yellow;
         height: 2px;
         width: 5%;
         margin: 29px -20px; 
@@ -521,20 +521,20 @@
     background: none !important;
     
     &-header{
-        border: 1px solid #dd9f14;
+        border: 1px solid @card-header-border;
         border-radius: 40px !important;
         margin-bottom: 13px;
         background: transparent;
         text-align: center;
         
         & .mb-0[aria-expanded=true]{
-            color: #fff;
-            background:#012E75 !important;
+            color: @color-white;
+            background:@my-blue !important;
         }
     }
     & a{
         font-size: 16px;
-        color: #333 !important;
+        color: @color-grey !important;
         font-weight: 100;
         text-decoration: none;
     }

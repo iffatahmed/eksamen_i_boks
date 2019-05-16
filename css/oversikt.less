@@ -6,11 +6,11 @@
     background-size: 100% auto;
 }
 .form-box{
-    background: #fff;
+    background: @color-white;
     width: 100%;
     padding: 76px 96px;
     height: 480px;
-    box-shadow: 1px 1px 32px #ccc;
+    box-shadow: 1px 1px 32px @color-black;
     border-radius: 10px;
 }
 .form-box .left-box-img img{
@@ -25,7 +25,7 @@
 }
 .space-boxes-checked h3 {
     font-size: 18px;
-    color: #2b5d95;
+    color: @my-blue-shade;
     margin-bottom: 20px;
 }
 .checkbox input[type="checkbox"],input[type="radio"] {
@@ -45,7 +45,7 @@
     height: 17px;
     margin-right: 0.5em;
     vertical-align: -3px;
-    border: 1px solid #ccc;
+    border: 1px solid @color-black;
     padding: 0.12em;
     background-color: transparent;
     background-clip: content-box;
@@ -56,7 +56,7 @@
     margin-right: 1em;
     position: relative;
     margin-bottom: 15px;
-    color: #555555;
+    color: @color-grey;
     font-size: 14px;
     font-weight: 500;
 }
@@ -64,8 +64,8 @@
     margin: 4px 23px;  
 }
 .checkbox label:after {
-  border-right: 3px solid #000000;
-  border-top: 3px solid #000000;
+  border-right: 3px solid @color-black;
+  border-top: 3px solid @color-black;
   content: "";
   height: 20px;
   left: 4px;
@@ -82,16 +82,16 @@
 }
 
 .checkbox input:checked + label:before {
-  border-color: #ccc;
+  border-color: @color-black;
 }
 
 .checkbox input:disabled + label {
-  border-color: #d2d2d2;
-  color: #d2d2d2;
+  border-color: @my-grey;
+  color: @my-grey;
 }
 
 .checkbox input:disabled + label:before {
-  border-color: #d2d2d2;
+  border-color: @my-grey;
 }
 
 .checkbox input:not([disabled]):checked + label:after {
@@ -105,7 +105,7 @@
 }
 
 .checkbox input:disabled:checked + label:after {
-  border-color: #d2d2d2;
+  border-color: @my-grey;
   display: block;
 }
 
@@ -124,7 +124,7 @@
     padding: 13px 15px;
     cursor: pointer;
     color: #333;
-    border: 1px solid #d6bf18;
+    border: 1px solid @my-yellow;
     border-radius: 40px;  appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -132,7 +132,7 @@
   outline: none;
 }
 .select select option{
-    background: #fff;
+    background: @color-white;
     color: #333 !important;
     font-weight: 500;
 }
@@ -153,7 +153,7 @@
 
 .select select:hover + .select_arrow,
 .select select:focus + .select_arrow {
-    border-top-color: #000;
+    border-top-color: @color-black;
     -moz-appearance: none !important;
 }
 
@@ -209,7 +209,7 @@
     font-size: 15px !important;
     padding: 3px 13px !important;
     border-radius: 10px !important;
-    color: #2b5d95 !important;    
+    color: @my-blue-shade !important;    
     margin: 5px 21px;
 }
 .b4-btn img{
@@ -230,11 +230,11 @@
     padding-bottom: 70px; 
 }
 .register-box-bg{
-    background: #fff;
+    background: @color-white;
     width: 100%;
     padding: 76px 96px;
     height: 480px;
-    box-shadow: 1px 1px 32px #ccc;
+    box-shadow: 1px 1px 32px @color-black;
 }
 .reg1 img{
     height: 26px;
@@ -260,12 +260,12 @@
     z-index: 9999;
 }
 .nav-tabs-sec li {
-    background: #fff;
+    background: @color-white;
     border-radius: 28px;
     margin: 0 3px;
-    border: 1px solid #ccc;
+    border: 1px solid @color-black;
 }
 .nav-tabs-sec li .active{
-    background: #fff;
+    background: @color-white;
     border-radius: 28px;
 }
