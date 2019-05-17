@@ -1,0 +1,319 @@
+@font-face {
+  font-family: sfBlack;
+  src: url(../css/fonts/SF-Pro-Display-Black.otf);
+}
+@font-face {
+  font-family: sfBold;
+  src: url(../css/fonts/SF-Pro-Display-Bold.otf);
+}
+@font-face {
+  font-family: sfHavy;
+  src: url(../css/fonts/SF-Pro-Display-Heavy.otf);
+}
+@font-face {
+  font-family: sfmedium;
+  src: url(../css/fonts/SF-Pro-Display-Medium.otf);
+}
+@font-face {
+  font-family: sfRegular;
+  src: url(../css/fonts/SF-Pro-Display-Regular.otf);
+}
+@font-face {
+  font-family: sfsemiBold;
+  src: url(../css/fonts/SF-Pro-Display-Semibold.otf);
+}
+@font-face {
+  font-family: sfsmooth;
+  src: url(../css/fonts/Smooth Circulars.otf);
+}
+@font-face {
+  font-family: sfgeneral;
+  src: url(../css/fonts/STIXGeneral.otf);
+}
+/******* Login Screen *******/
+.login-bg-section {
+  background: url(../images/bg_content_area.png);
+  width: 100%;
+  background-size: 100% auto;
+}
+.form-box {
+  background: #fff;
+  width: 100%;
+  padding: 76px 96px;
+  height: 480px;
+  box-shadow: 1px 1px 32px #000;
+  border-radius: 10px;
+}
+.form-box .left-box-img img {
+  position: relative;
+  top: 24%;
+  left: 20%;
+}
+.space-boxes-checked {
+  position: relative;
+  top: 57px;
+  left: 85px;
+}
+.space-boxes-checked h3 {
+  font-size: 18px;
+  color: #2b5d95;
+  margin-bottom: 20px;
+}
+.checkbox input[type="checkbox"],
+input[type="radio"] {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.checkbox label:before {
+  content: "";
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  margin-right: 0.5em;
+  vertical-align: -3px;
+  border: 1px solid #000;
+  padding: 0.12em;
+  background-color: transparent;
+  background-clip: content-box;
+  transition: all 0.2s ease;
+  border-radius: 11px;
+}
+.checkbox label {
+  margin-right: 1em;
+  position: relative;
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+}
+.left-space-label {
+  margin: 4px 23px;
+}
+.checkbox label:after {
+  border-right: 3px solid #000;
+  border-top: 3px solid #000;
+  content: "";
+  height: 20px;
+  left: 4px;
+  position: absolute;
+  top: 11px;
+  transform: scaleX(-1) rotate(135deg);
+  transform-origin: left top;
+  width: 7px;
+  display: none;
+}
+.checkbox input:hover + label:before {
+  border-color: #3dbfef;
+}
+.checkbox input:checked + label:before {
+  border-color: #000;
+}
+.checkbox input:disabled + label {
+  border-color: #cccccc;
+  color: #cccccc;
+}
+.checkbox input:disabled + label:before {
+  border-color: #cccccc;
+}
+.checkbox input:not([disabled]):checked + label:after {
+  -moz-animation: check 0.8s ease 0s running;
+  -webkit-animation: check 0.8s ease 0s running;
+  animation: check 0.8s ease 0s running;
+  display: block;
+  width: 7px;
+  height: 20px;
+  border-color: #17cc31;
+}
+.checkbox input:disabled:checked + label:after {
+  border-color: #cccccc;
+  display: block;
+}
+.select {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+.clicked {
+  background: #3680c9 !important;
+  border-radius: 0px !important;
+  border: none !important;
+  color: #fff !important;
+}
+.select select {
+  display: inline-block;
+  width: 100%;
+  padding: 13px 15px;
+  cursor: pointer;
+  color: #333;
+  border: 1px solid #d6bf18;
+  border-radius: 40px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-size: 15px;
+  outline: none;
+}
+.select select option {
+  background: #fff;
+  color: #333 !important;
+  font-weight: 500;
+}
+.select select {
+  display: inline-block;
+  width: 100%;
+  padding: 13px 15px;
+  cursor: pointer;
+  color: #333;
+  border: 1px solid #d6bf18;
+  border-radius: 40px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-size: 15px;
+  outline: none;
+}
+.select select option {
+  background: #fff;
+  color: #333 !important;
+  font-weight: 500;
+}
+.select select::-ms-expand {
+  display: none;
+}
+.select_arrow {
+  position: absolute;
+  top: calc(43%);
+  right: 24px;
+  width: 9px;
+  height: 14px;
+  pointer-events: none;
+  background: url(../images/updown.png);
+  background-size: contain;
+}
+.select select:focus + .select_arrow {
+  border-top-color: #000;
+  -moz-appearance: none !important;
+}
+@-moz-keyframes check {
+  0% {
+    height: 0;
+    width: 0;
+  }
+  25% {
+    height: 0;
+    width: 7px;
+  }
+  50% {
+    height: 20px;
+    width: 7px;
+  }
+}
+@-webkit-keyframes check {
+  0% {
+    height: 0;
+    width: 0;
+  }
+  25% {
+    height: 0;
+    width: 7px;
+  }
+  50% {
+    height: 20px;
+    width: 7px;
+  }
+}
+@keyframes check {
+  0% {
+    height: 0;
+    width: 0;
+  }
+  25% {
+    height: 0;
+    width: 7px;
+  }
+  50% {
+    height: 20px;
+    width: 7px;
+  }
+}
+.b4-btn {
+  display: -webkit-box !important;
+  border: 2px solid #e1d36d !important;
+  text-transform: uppercase !important;
+  font-weight: bold !important;
+  font-size: 15px !important;
+  padding: 3px 13px !important;
+  border-radius: 10px !important;
+  color: #2b5d95 !important;
+  margin: 5px 21px;
+}
+.b4-btn img {
+  margin-left: 10px;
+  margin-top: -4.6px;
+}
+.b4-btn:hover {
+  text-decoration: none !important;
+}
+/******* Registered *******/
+.register-bg-section {
+  background: url(../images/bg_content_area.png);
+  width: 100%;
+  background-size: 100% auto;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.register-box-bg {
+  background: #fff;
+  width: 100%;
+  padding: 76px 41px;
+  height: 480px;
+  box-shadow: 1px 1px 32px #000;
+}
+.reg1 img {
+  height: 26px;
+}
+.reg1 h3 {
+  text-transform: uppercase;
+  font-size: 17px;
+  margin: 10px 0;
+  font-family: sfHavy;
+}
+.register-box-space {
+  margin-top: 80px;
+}
+.btn-float {
+  margin-top: 30px;
+  position: relative;
+  left: 17px;
+  float: right;
+}
+.nav-tabs-sec {
+  border-bottom: transparent !important;
+  margin-top: -21px;
+  position: relative;
+  z-index: 9999;
+}
+.nav-tabs-sec li {
+  background: #fff;
+  border-radius: 28px;
+  margin: 0 3px;
+  padding: 5px 5px;
+}
+.nav-tabs-sec li .active {
+  border-color: #d6bf18 !important;
+  border-radius: 28px;
+  background: #fff;
+}
+.nav-tabs-sec li a {
+  border: 1px solid #ccc !important;
+  border-radius: 50% !important;
+}

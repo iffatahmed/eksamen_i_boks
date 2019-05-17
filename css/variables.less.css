@@ -1,0 +1,32 @@
+@font-face {
+  font-family: sfBlack;
+  src: url(../css/fonts/SF-Pro-Display-Black.otf);
+}
+@font-face {
+  font-family: sfBold;
+  src: url(../css/fonts/SF-Pro-Display-Bold.otf);
+}
+@font-face {
+  font-family: sfHavy;
+  src: url(../css/fonts/SF-Pro-Display-Heavy.otf);
+}
+@font-face {
+  font-family: sfmedium;
+  src: url(../css/fonts/SF-Pro-Display-Medium.otf);
+}
+@font-face {
+  font-family: sfRegular;
+  src: url(../css/fonts/SF-Pro-Display-Regular.otf);
+}
+@font-face {
+  font-family: sfsemiBold;
+  src: url(../css/fonts/SF-Pro-Display-Semibold.otf);
+}
+@font-face {
+  font-family: sfsmooth;
+  src: url(../css/fonts/Smooth Circulars.otf);
+}
+@font-face {
+  font-family: sfgeneral;
+  src: url(../css/fonts/STIXGeneral.otf);
+}

@@ -119,6 +119,30 @@
   margin-bottom: 15px;
   margin-top: 10px;
 }
+.clicked{
+    background: #3680c9 !important;
+    border-radius: 0px !important;
+    border:none !important;
+    color: #fff !important;
+}
+.select select {
+  display: inline-block;
+    width: 100%;
+    padding: 13px 15px;
+    cursor: pointer;
+    color: #333;
+    border: 1px solid #d6bf18;
+    border-radius: 40px;  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-size: 15px;
+  outline: none;
+}
+.select select option{
+    background: #fff;
+    color: #333 !important;
+    font-weight: 500;
+}
 
 .select select {
   display: inline-block;
@@ -234,7 +258,7 @@
 .register-box-bg{
     background: @color-white;
     width: 100%;
-    padding: 76px 96px;
+    padding: 76px 41px;
     height: 480px;
     box-shadow: 1px 1px 32px @color-black;
 }
@@ -243,8 +267,9 @@
 }
 .reg1 h3{
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 17px;
     margin: 10px 0;
+    font-family:sfHavy;
 }
 .register-box-space {
     margin-top: 80px;
@@ -265,9 +290,14 @@
     background: @color-white;
     border-radius: 28px;
     margin: 0 3px;
-    border: 1px solid @color-black;
+    padding:5px 5px;
 }
 .nav-tabs-sec li .active{
-    background: @color-white;
+    border-color: @my-yellow !important;
     border-radius: 28px;
+    background: @color-white;
+}
+.nav-tabs-sec li a{
+    border: 1px solid #ccc !important;
+    border-radius: 50% !important; 
 }

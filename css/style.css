@@ -1775,8 +1775,8 @@ body{
 .register-box-bg {
     background: #fff !important;
     width: 100%;
-    padding: 30px 29px !important;
-    height: 310px !important;
+    padding: 30px 29px;
+    height: 310px ;
     box-shadow: 1px 1px 10px #ccc !important;
 }
 .register-box-space {
