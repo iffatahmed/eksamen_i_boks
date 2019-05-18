@@ -45,15 +45,19 @@
     margin-top: 10px;
     left: 10;
     background: transparent !important;
+    top: 0;
   }
   .navbar-brand img {
     top: 0 !important;
   }
-  .navigation:before {
+  .navigation-head:before {
     background: none;
   }
-  .navigation:after {
+  .navigation-head:after {
     background: none;
+  }
+  .navigation-head {
+    height: auto;
   }
   .navigation-menu-top {
     position: relative;
@@ -77,12 +81,104 @@
   .navigation-menu-bottom li a {
     color: #fff !important;
   }
+  .banner-headings {
+    margin-top: 21px;
+  }
+  .banner-headings li {
+    display: inherit;
+    margin-bottom: 7px;
+  }
+  .banner-headings li:nth-child(2) {
+    border-right: 2px solid transparent;
+  }
+  .banner-headings li:nth-child(1) {
+    border-right: 2px solid transparent;
+  }
+  .banner-headings li:nth-child(4) {
+    border-right: 2px solid transparent;
+  }
+  .mid-section-02 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .mid-section-02:after {
+    background: none;
+  }
+  .mid-section-04 {
+    padding: 30px 0px;
+  }
+  .content-circle-price {
+    right: 13px;
+  }
+  .stars-img:before {
+    background: none;
+  }
+  .space-top-testimonial .active {
+    transform: inherit;
+    box-shadow: none;
+    position: initial;
+  }
+  .space-top-testimonial .col-sm-4 {
+    padding: 15px;
+  }
+  .space-top-testimonial {
+    margin-top: 0px;
+  }
+  .testimonial-s1 img {
+    height: 260px;
+  }
+  .testimonial1-caption {
+    background: #ffffff;
+    padding: 39px 38px;
+    margin-right: 0px !important;
+    margin-left: 0px;
+    margin-top: -67px;
+    position: relative;
+  }
+  .bg-img-section-03 {
+    padding: 53px 0px;
+  }
+  .section-right-box-03 {
+    margin: 30px 30px;
+  }
+  .section-01-boxes {
+    padding: 21px 23px !important;
+    border-radius: 15px;
+    height: auto;
+    margin: 0 0px;
+  }
+  .section-let-box-03 {
+    margin: 70px 7px;
+  }
+  .section-let-box-03:before {
+    left: 14px;
+  }
+  .faq-title h3:before {
+    width: 24%;
+  }
+  .bottomBox-sec01 {
+    margin-bottom: 35px;
+  }
+  .bg-img-section-03 {
+    padding: 53px 0px;
+  }
+  .bg-img-section-03:before {
+    margin-top: 39px !important;
+    left: 25% !important;
+    width: 216px !important;
+  }
+  .topspace-section03 {
+    margin-top: 70px;
+  }
   .title-bar .triangularline {
     width: 100%;
   }
   .align-font {
     padding: 26px 0;
     color: #fff;
+  }
+  .b4-colum {
+    padding: 10px 26px !important;
   }
   .footer-bg {
     height: auto;
@@ -148,6 +244,7 @@
   }
   .navbar-brand {
     margin-top: 10px;
+    top: 0;
     background: transparent !important;
   }
   .navbar-brand img {
@@ -169,6 +266,15 @@
   }
   .navigation-menu-bottom li {
     border-bottom: 1px solid #cccccc;
+  }
+  .navigation-head:before {
+    background: none;
+  }
+  .navigation-head:after {
+    background: none;
+  }
+  .navigation-head {
+    height: auto;
   }
   .title-bar .triangularline {
     width: 100%;
@@ -211,6 +317,88 @@
   }
   .blue-dark-btn {
     font-size: 8px !important;
+  }
+  /* Home Page */
+  .banner-headings {
+    margin-top: 21px;
+  }
+  .mid-section-02 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .mid-section-02:after {
+    background: none;
+  }
+  .mid-section-04 {
+    padding: 30px 0px;
+  }
+  .content-circle-price {
+    right: 13px;
+    width: 60px;
+    height: 60px;
+  }
+  .price-box {
+    width: 45px;
+    height: 45px;
+    top: 7px;
+    left: 7px;
+    padding: 14px 8px;
+  }
+  .stars-img:before {
+    background: none;
+  }
+  .space-top-testimonial .active {
+    transform: inherit;
+    box-shadow: none;
+    position: initial;
+  }
+  .space-top-testimonial {
+    margin-top: 0px;
+  }
+  .testimonial1-caption {
+    background: #ffffff;
+    margin-right: 15px;
+    margin-left: 0px;
+  }
+  .bg-img-section-03 {
+    padding: 53px 0px;
+  }
+  .bg-img-section-03:before {
+    width: 209px;
+    background-repeat: no-repeat;
+    left: 2%;
+  }
+  .section-right-box-03 {
+    margin: 30px 30px;
+  }
+  .section-right-box-03 p {
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .section-01-boxes {
+    padding: 21px 11px;
+    border-radius: 15px;
+    height: auto;
+    margin: 0 0px;
+  }
+  .section-let-box-03 {
+    margin: 33px 7px;
+    background: rgba(255, 255, 255, 0.84);
+    padding: 34px 14px;
+    border-radius: 16px;
+    box-shadow: 1px 1px 20px #000;
+  }
+  .content-list-01 li {
+    font-size: 9px;
+  }
+  .bottomBox-sec01-caption {
+    padding: 10px 7px;
+  }
+  .bottomBox-sec01-caption ul li {
+    font-size: 9px;
+  }
+  .b4-colum {
+    padding: 0 26px !important;
   }
 }
 /*end*/
@@ -259,11 +447,12 @@
   }
   .navbar-brand {
     margin-top: 10px;
+    top: 0;
   }
   .navbar-brand img {
     height: 68px;
     position: relative;
-    left: 10px;
+    left: 0px;
     top: 17px;
   }
   .navigation-menu-top {
@@ -300,6 +489,88 @@
     background-size: 100% auto;
     padding: 26px 97px;
     height: 385px;
+  }
+  /* Home Page */
+  .banner-headings {
+    margin-top: 50px;
+  }
+  .mid-section-02 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .mid-section-02:after {
+    background: none;
+  }
+  .mid-section-04 {
+    padding: 30px 0px;
+  }
+  .content-circle-price {
+    right: 13px;
+    width: 60px;
+    height: 60px;
+  }
+  .price-box {
+    width: 45px;
+    height: 45px;
+    top: 7px;
+    left: 7px;
+    padding: 14px 8px;
+  }
+  .stars-img:before {
+    background: none;
+  }
+  .space-top-testimonial .active {
+    transform: inherit;
+    box-shadow: none;
+    position: initial;
+  }
+  .space-top-testimonial {
+    margin-top: 0px;
+  }
+  .testimonial1-caption {
+    background: #ffffff;
+    margin-right: 15px;
+  }
+  .bg-img-section-03 {
+    padding: 53px 0px;
+  }
+  .bg-img-section-03:before {
+    width: 209px;
+    background-repeat: no-repeat;
+    left: 2%;
+    margin-top: 77px;
+  }
+  .section-right-box-03 {
+    margin: 30px 30px;
+  }
+  .section-right-box-03 p {
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .section-01-boxes {
+    padding: 21px 11px;
+    border-radius: 15px;
+    height: auto;
+    margin: 0 0px;
+  }
+  .section-let-box-03 {
+    margin: 33px 7px;
+    background: rgba(255, 255, 255, 0.84);
+    padding: 50px 14px;
+    border-radius: 16px;
+    box-shadow: 1px 1px 20px #000;
+  }
+  .content-list-01 li {
+    font-size: 9px;
+  }
+  .bottomBox-sec01-caption {
+    padding: 10px 7px;
+  }
+  .bottomBox-sec01-caption ul li {
+    font-size: 9px;
+  }
+  .b4-colum {
+    padding: 0 56px;
   }
 }
 /*end*/
